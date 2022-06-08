@@ -1,7 +1,4 @@
-import TextInput from './TextInputComponent/TextInput'; 
+import TextInput from './TextInputComponent/TextInput';
 import FormsyComponent from './Formsy/formsy';
 
-export {
-    TextInput,
-    FormsyComponent
-}
+export { TextInput, FormsyComponent };

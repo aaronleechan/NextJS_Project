@@ -15,6 +15,11 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "cypress/integration/pages/user_application/personal_name.js"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "cypress/integration/pages/user_application/personal_name.js"
+  ],
   "exclude": ["node_modules"]
 }
