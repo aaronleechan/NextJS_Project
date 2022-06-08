@@ -1,7 +1,7 @@
 import Formsy from "formsy-react";
 import React from "react";
 import { PersonalName,Email,Password, Phone } from "../../components/user_application_form";
-import FormsyComponent from "../../components/commons/Formsy/formsy";
+import {FormsyComponent} from "../../components/commons";
 
 const UserApplication = () =>{
     

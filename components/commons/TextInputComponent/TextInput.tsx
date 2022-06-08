@@ -84,7 +84,6 @@ const TextInput: React.FC<IFormsDecorator & ITextInputFormsyProps> = (props:(IFo
     }
 
     const getErrorLabel = () =>{
-        console.log({" getError Label ": `${name}-errorMsg`})
         return(
             <div id={`${name}-errorMsg`} className={styles.error}>
                 {props.errorMessage}

@@ -31,16 +31,4 @@ describe('/Navigation',()=>{
     it('Cancel Button Enable by Default',()=>{
         cy.get('#cancel_button').should('not.be.disabled')
     })
-
-    it('Display invalid personal name',()=>{
-        cy.get('#personal_name').type('A')
-        cy.get('#personal_name-errorMsg').should('have.text','Name must be between 2 and 30 character long')
-        cy.get('#personal_name').clear()
-
-        cy.get('#personal_name').type('@AC')
-        cy.get('#personal_name-errorMsg').should('have.text','Invalid Name')
-        cy.get('#personal_name').clear()
-    })
-
-
 })

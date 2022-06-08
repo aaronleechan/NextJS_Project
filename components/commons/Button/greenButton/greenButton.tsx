@@ -46,11 +46,11 @@ const GreenButton: React.FC<greenButtonInterface> = (props: greenButtonInterface
 
     const submit = (e: any) =>{
         console.log({" On Submit ": e})
-     }
+    }
  
-     const enableButton = () => {setCanSubmit(true)}
+    const enableButton = () => {setCanSubmit(true)}
  
-     const disableButton = () => {setCanSubmit(false)}
+    const disableButton = () => {setCanSubmit(false)}
 
     return(
         <button
