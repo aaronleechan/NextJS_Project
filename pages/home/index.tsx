@@ -1,8 +1,13 @@
 import React from "react"
+import Link from "next/link"
 
 const  Home = () => {
     return(
-        <h1>This is Home Page</h1>
+        <ul>
+            <li>
+                <Link href="/user_application"><a>Sample User Application Form</a></Link>
+            </li>
+        </ul>
     )
 }
 
