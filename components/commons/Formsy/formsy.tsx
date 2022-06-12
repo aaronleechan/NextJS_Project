@@ -4,6 +4,9 @@ import styles from './formsy.module.scss';
 import InjectedProps from 'formsy-react';
 
 const FormsyComponent = (props: any) => {
+
+  const {onSubmit} = props;
+
   const formRef = useRef<InjectedProps>(null);
 
   const [canSubmit, setCanSubmit] = useState(false);
@@ -12,6 +15,7 @@ const FormsyComponent = (props: any) => {
 
   const submit = () => {
     console.log(formRef.current?.getModel());
+    onSubmit(formRef.current?.getModel())
   };
 
   const enableButton = () => {
