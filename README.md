@@ -42,3 +42,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 # Web3_aarlic
 
 # WEB3
+
+# Refer Architecture 
+https://dev.to/alexeagleson/how-to-build-scalable-architecture-for-your-nextjs-project-2pb7
