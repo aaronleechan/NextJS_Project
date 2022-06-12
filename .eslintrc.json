@@ -14,7 +14,7 @@
   "rules": {
     //Specify ESLint rules overwrites here
     //Note: 0=off, 1=warn , 2=error
-    "no-unused-vars": [1, { "args": "after-used", "argsIgnorePattern": "^_" }],
+    "no-unused-vars": [0, { "args": "after-used", "argsIgnorePattern": "^_" }],
     // "@typescript-eslint/ban-ts-comment":"warn",
     "@typescript-eslint/camelcase": "off",
     "@typescript-eslint/class-name-casing": 0,
