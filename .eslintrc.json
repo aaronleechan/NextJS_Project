@@ -7,10 +7,19 @@
       "jsx": true // Parse JSX
     }
   },
-  "extends": ["next", "next/core-web-vitals", "eslint:recommended"],
+  "extends": ["plugin:storybook/recommended","next", "next/core-web-vitals", "eslint:recommended"],
   "globals": {
     "React": "readonly"
   },
+  "overrides": [
+    {
+      "files": ["*.stories.@(ts|tsx|js|jsx|mjs|cjs)"],
+      "rules": {
+        // example of overriding a rule
+        "storybook/hierarchy-separator": "error"
+      }
+    }
+  ],
   "rules": {
     //Specify ESLint rules overwrites here
     //Note: 0=off, 1=warn , 2=error
