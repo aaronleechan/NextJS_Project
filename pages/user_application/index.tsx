@@ -8,10 +8,9 @@ import {
 import { FormsyComponent } from '../../components/commons';
 
 const UserApplication = () => {
-
-  const onSubmit =(obj: any) =>{
-    console.log({" obj ": obj})
-  }
+  const onSubmit = (obj: any) => {
+    console.log({ ' obj ': obj });
+  };
 
   return (
     <div>

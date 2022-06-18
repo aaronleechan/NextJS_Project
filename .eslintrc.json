@@ -1,13 +1,18 @@
 {
   "parser": "@typescript-eslint/parser", //ESLint parser spec
-  "parserOptions":{
+  "parserOptions": {
     "ecmaVersion": 2020, //Allows modern ECMAScript features parsing
     "sourceType": "module", // Allows for the use of imports
-    "ecmaFeatures":{
+    "ecmaFeatures": {
       "jsx": true // Parse JSX
     }
   },
-  "extends": ["plugin:storybook/recommended","next", "next/core-web-vitals", "eslint:recommended"],
+  "extends": [
+    "plugin:storybook/recommended",
+    "next",
+    "next/core-web-vitals",
+    "eslint:recommended"
+  ],
   "globals": {
     "React": "readonly"
   },
@@ -53,7 +58,7 @@
     "react/jsx-no-undef": 0,
     "react/no-children-prop": 0,
     "react/no-direct-mutation-state": 0,
-    "react/no-string-refs":0,
+    "react/no-string-refs": 0,
     "react/no-unescaped-entities": 0,
     "react/prop-types": 0,
     "react/jsx-uses-react": "off",

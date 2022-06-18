@@ -43,10 +43,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 # WEB3
 
-# Refer Architecture 
+# Refer Architecture
 
 https://dev.to/alexeagleson/how-to-build-scalable-architecture-for-your-nextjs-project-2pb7
-
 
 # Directory Structure
 
@@ -54,6 +53,6 @@ https://dev.to/alexeagleson/how-to-build-scalable-architecture-for-your-nextjs-p
 /lib
 /pages
 
-* component - The individual UI components that make up the app will live in here
-* lib - Business/app/domain logic will live in here.
-* pages - Will be the actual routes/pages as per the required Next.js structure.
+- component - The individual UI components that make up the app will live in here
+- lib - Business/app/domain logic will live in here.
+- pages - Will be the actual routes/pages as per the required Next.js structure.
