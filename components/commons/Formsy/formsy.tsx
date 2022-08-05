@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import Formsy from 'formsy-react';
 import styles from './formsy.module.scss';
 import InjectedProps from 'formsy-react';
+import { SubmitButton } from '../buttons/formsyButton/Button';
 
 const FormsyComponent = (props: any) => {
   const { onSubmit } = props;
@@ -37,24 +38,20 @@ const FormsyComponent = (props: any) => {
       ref={formRef}
     >
       {children}
-      <button
-        id="cancel_button"
-        className={styles.cancel_button}
-        type="button"
+      <SubmitButton
         onClick={cancelButton}
-      >
-        {' '}
-        Cancel{' '}
-      </button>
-      <button
-        id="submit_button"
-        className={styles.submit_button}
-        type="submit"
+        label={'Cancel'}
+        type={'button'}
+        size={'medium'}
+        primary={false}
+      />
+      <SubmitButton
         disabled={!canSubmit}
-      >
-        {' '}
-        Submit{' '}
-      </button>
+        label={'Submit'}
+        type={'submit'}
+        size={'medium'}
+        primary={true}
+      />
     </Formsy>
   );
 };

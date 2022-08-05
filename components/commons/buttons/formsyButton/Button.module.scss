@@ -1,0 +1,52 @@
+@import '../../../../styles/color.module.scss';
+
+.button {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border: 0;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  margin-right: 3px;
+}
+
+.button_primary {
+  color: white;
+  --hue: 210;
+  --saturation: 100%;
+  --lightness: 50%;
+  background-color: hsl(var(--hue), var(--saturation), var(--lightness));
+}
+
+.button_primary:hover {
+  --lightness: 40%;
+}
+
+.button_secondary {
+  color: #333;
+  background-color: transparent;
+  --hue: 0;
+  --saturation: 0%;
+  --lightness: 80%;
+  background-color: hsl(var(--hue), var(--saturation), var(--lightness));
+}
+
+.button_secondary:hover {
+  --lightness: 40%;
+}
+
+.button__small {
+  font-size: 12px;
+  padding: 10px 16px;
+}
+
+.button__medium {
+  font-size: 14px;
+  padding: 11px 20px;
+}
+
+.button__large {
+  font-size: 16px;
+  padding: 12px 24px;
+}

@@ -1,7 +1,6 @@
 import * as NextImage from 'next/image';
-import { AuthProvider} from '../state/auth/AuthContext';
-import { RouterContext } from 'next/dist/shared/lib/router-context'
-
+import { AuthProvider } from '../state/auth/AuthContext';
+import { RouterContext } from 'next/dist/shared/lib/router-context';
 
 const BREAKPOINTS_INT = {
   xs: 375,
@@ -13,7 +12,6 @@ const BREAKPOINTS_INT = {
 
 const customViewports = Object.fromEntries(
   Object.entries(BREAKPOINTS_INT).map(([key, val], idx) => {
-    console.log(val);
     return [
       key,
       {
@@ -45,7 +43,7 @@ export const parameters = {
   },
   viewport: { viewports: customViewports },
   layout: 'fullscreen',
-  nextRouter:{
-    Provider: RouterContext.Provider
-  }
+  nextRouter: {
+    Provider: RouterContext.Provider,
+  },
 };

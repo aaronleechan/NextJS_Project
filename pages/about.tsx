@@ -1,5 +1,5 @@
-import PrimaryLayout from '../stories/components/layouts/primary/PrimaryLayout';
-import SidebarLayout from '../stories/components/layouts/sidebar/SidebarLayout';
+import PrimaryLayout from '../components/Layout/primary/PrimaryLayout';
+import SidebarLayout from '../components/Layout/sidebar/SidebarLayout';
 import { NextPageWithLayout } from './page';
 
 const About: NextPageWithLayout = () => {
